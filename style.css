@@ -1,0 +1,60 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 2fr 1.8fr 0.5fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grid-header grid-header grid-header"
+        "grid-nav grid-text grid-svg"
+        "grid-nav grid-text grid-controls";
+}
+
+.grid-nav {
+    grid-area: grid-nav;
+    background-image: url(https://images.unsplash.com/photo-1610814651936-61f4b9e31679?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80);
+    clip-path: rectangle()
+}
+
+.grid-text {
+    grid-area: grid-text;
+}
+
+.grid-svg {
+    grid-area: grid-svg;
+}
+
+.grid-controls {
+    grid-area: grid-controls;
+}
+
+
+
+.grid-header {
+    grid-area: grid-header;
+    background-image: url(https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    clip-path: rectangle()
+}
+
+.grid-text {
+    grid-area: grid-text;
+}
+
+.grid-svg {
+    grid-area: grid-svg;
+}
+
+.grid-controls {
+    grid-area: grid-controls;
+}
+
+.grid-header {
+    grid-area: grid-header;
+}
+
+#svg-canvas {
+    width: 50vw;
+    height: 50vh;
+}
